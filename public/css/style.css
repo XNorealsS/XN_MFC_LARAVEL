@@ -1,0 +1,349 @@
+/* Reset some default styles */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+/* ...BY RIFAA ... */
+
+.countdown-clock__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    gap: 20px;
+    margin-top: 50px;
+    background-color: white;
+}
+
+.countdown-clock__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.countdown-clock__value {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+}
+
+.countdown-clock__label {
+    font-size: 16px;
+    color: #666;
+}
+
+
+@keyframes initialNavbarAnimation {
+    from {
+        width: 100%;
+    }
+    to {
+        width: 160vh;
+    }
+}
+
+.navbar {
+    margin-top: 50px;
+    background-color: #fff;
+    position: absolute;
+    width: 160vh;
+    transition: background-color 0.3s, color 0.3s;
+    z-index: 1000;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    padding: 10px;
+    animation: initialNavbarAnimation 0.5s ease-in-out forwards;
+}
+
+
+
+.sticky {
+    margin-top: 0;
+    width: 200vh;
+    background-color: #000;
+    color: white;
+    position: fixed;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+    animation: collapseNavbar 0.5s ease-in-out forwards;
+}
+
+@keyframes collapseNavbar {
+    from {
+        width: 50%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+
+.search-icon img {
+    width: 20px; /* Sesuaikan ukuran ikon pencarian */
+    display: flex
+    
+}
+
+/* ...BY RIFAA ... */
+
+
+
+.navbar.sticky {
+    background-color: #000000;
+    color: white;
+    position: fixed;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar.sticky h4,
+.navbar.sticky a {
+    color: white !important;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    flex: 1;
+    text-align: center;
+}
+
+.logo h2 {
+    margin: 0;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    margin: 0 15px;
+}
+
+
+
+
+
+.menu {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+}
+
+.menu li {
+    margin-right: 35px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: black;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 0;
+    transition: all;
+    transition-duration: 300ms;
+    border-bottom: 1px solid rgba(255, 0, 0, 0);
+}
+
+.menu a:hover{
+    border-bottom: 1px solid rgb(255, 0, 0);
+    color: red;
+}
+
+
+.logo{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: 1px solid rgb(255, 0, 0);
+    padding: 10px 0;
+}
+
+
+
+
+
+
+
+
+/* Hamburger Menu Styles */
+.hamburger {
+    display:inline-flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.hamburger h4{
+    
+    color: rgb(255, 255, 255);
+}
+
+.hamburger div {
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0;
+}
+
+/* Media Query for Responsive Layout */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        background-color: white;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu li {
+        margin: 0;
+        padding: 15px 0;
+    }
+
+    .hamburger h4{
+        color: black;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo {
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    }
+}
+
+/* Image Container Styles */
+/* Image Container Styles */
+.image-container {
+    position: relative;
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto;
+    z-index: -2;
+    background-repeat: no-repeat, repeat;
+}
+
+.image-home {
+    width: 100%; /* Menggunakan unit vw (viewport width) */
+    height: 60%;
+    display: block;
+    justify-content: center;
+    opacity: 0.7;
+}
+
+
+
+
+
+.ayammmsaa {
+   font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+.ayammmsaa h1 {
+    margin: 0;
+    font-size: 30px;
+}
+
+.ayammmsaa h2 {
+    margin: 0;
+    font-size: 50px;
+}
+
+.ayammmsaa h3 {
+    margin: 0;
+    font-size: 15px;
+}
+
+
+
+/* Image Title Styles */
+
+/* Media Query for Responsive Image Title */
+@media (max-width: 768px) {
+
+    .image-home {
+        width: 100%; /* Menggunakan unit vw (viewport width) */
+        height: auto;
+        display: block;
+        justify-content: center;
+    }
+
+    .image-title {
+        font-size: 4vw; /* Menggunakan unit vw untuk ukuran font pada breakpoint ini */
+    }
+}
+
+/* Event Content Styles */
+.event-content-fight {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Allow content to wrap on smaller screens */
+}
+
+.fighter-image {
+    width: 100px;
+}
+
+.event-title {
+    color: rgb(255, 255, 255);
+
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+/* Timer Container Styles */
+.container-timer {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    padding: 20px 0; /* Add padding for better spacing */
+}
+
+.countdown {
+    text-align: center;
+    font-size: 24px;
+    color: white;
+}
+
+/* Media Query for Timer Font Size */
+@media (max-width: 768px) {
+    .countdown {
+        font-size: 18px;
+    }
+}
